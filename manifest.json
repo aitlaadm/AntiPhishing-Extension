@@ -2,10 +2,15 @@
     "manifest_version": 2,
     "name": "AntiPhishing",
     "version": "1.0.0",
+    "description": "AntiPhishing est une extension qui détecte les ",
+    "icons": {
+        "48": "icon.png"
+    },
     "content_scripts": [
         {
             "matches": [
-                "<all_urls>"
+                "https://mail.google.com/mail/u/0/*",
+                "https://outlook.office365.com/mail/inbox/*"
             ],
             "js": [
                 "jquery-3.6.0.min.js",
