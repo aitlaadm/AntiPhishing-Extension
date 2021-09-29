@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "AntiPhishing",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "jquery-3.6.0.min.js",
+                "Content.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Analyser"
+    }
+}
