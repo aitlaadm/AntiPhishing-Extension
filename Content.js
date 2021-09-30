@@ -63,7 +63,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     }
     sendResponse({
 
-        count: matches == true ? "Attention ! Ce mail pourra être une tentative d'hameçonnage" : 'OK'
+        count: matches == true ? "Attention ! Ce mail pourrait être une tentative d'hameçonnage" : 'OK'
     })
 })
 //'Votre adresse a été choisie', 'gi', , 'gagnez', 'gi', "JUSQU''à", 'gi'
