@@ -1,15 +1,16 @@
 {
     "manifest_version": 2,
-    "name": "AntiPhishing",
+    "name": "TER7 AntiPhishing",
     "version": "1.0.0",
-    "description": "AntiPhishing est une extension qui détecte les ",
+    "description": "AntiPhishing est une extension qui détecte les emails susceptibles d'etre des tentatives d'hamçonnange",
+    "author": "Mohamed AIT LAADIK, Amani BELAID, Soufiane KABAD,PHAM Thi Thao Uyen, Mariama DIALLO",
     "icons": {
         "48": "icon.png"
     },
     "content_scripts": [
         {
             "matches": [
-                "https://mail.google.com/mail/u/0/*",
+                "https://mail.google.com/mail/u/*",
                 "https://outlook.office365.com/mail/inbox/*"
             ],
             "js": [
@@ -20,6 +21,6 @@
     ],
     "browser_action": {
         "default_popup": "popup.html",
-        "default_title": "Analyser"
+        "default_title": "Analyse du mail"
     }
 }

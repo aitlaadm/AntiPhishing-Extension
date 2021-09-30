@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function message(res) {
         const div = document.createElement('div')
-        div.style.cssText = "color:red;font-weight:800;font-size:16px;"
+        div.style.cssText = "margin: 15px 45px;color:red;font-weight:800;font-size:16px;"
         div.textContent = `${res.count}`
         document.body.appendChild(div)
     }
