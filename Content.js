@@ -49,9 +49,13 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     const m12 = document.documentElement.innerHTML.match(w12)
     tab.push(m12)
 
+    const w13 = new RegExp("filles", 'gi')
+    const m13 = document.documentElement.innerHTML.match(w13)
+    tab.push(m13)
 
-    console.log('tb', tab)
-    console.log('matches', matches)
+
+    // console.log('tb', tab)
+    // console.log('matches', matches)
     for (let i = 0; i < tab.length; i++) {
         if (tab[i] != null) {
             matches = true;
@@ -59,7 +63,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     }
     sendResponse({
 
-        count: matches == true ? "Attention ! tentative d'hameçonnage" : 'OK'
+        count: matches == true ? "Attention ! Ce mail pourra être une tentative d'hameçonnage" : 'OK'
     })
 })
 //'Votre adresse a été choisie', 'gi', , 'gagnez', 'gi', "JUSQU''à", 'gi'
