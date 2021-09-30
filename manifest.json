@@ -3,7 +3,6 @@
     "name": "TER7 AntiPhishing",
     "version": "1.0.0",
     "description": "AntiPhishing est une extension qui détecte les emails susceptibles d'etre des tentatives d'hamçonnange",
-    "author": "Mohamed AIT LAADIK, Amani BELAID, Soufiane KABAD,PHAM Thi Thao Uyen, Mariama DIALLO",
     "icons": {
         "48": "icon.png"
     },
@@ -19,6 +18,7 @@
             ]
         }
     ],
+    "author": "Mohamed AIT LAADIK, Amani BELAID, Soufiane KABAD,PHAM Thi Thao Uyen, Mariama DIALLO",
     "browser_action": {
         "default_popup": "popup.html",
         "default_title": "Analyse du mail"
